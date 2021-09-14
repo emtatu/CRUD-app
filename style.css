@@ -154,13 +154,13 @@ li {
   align-items: flex-end;
 
   position: absolute;
-  left: 65%;
-  bottom: 57%;
+  left: 62%;
+  bottom: 71%;
   margin-top: 95%;
 }
 .delete-list:hover {
   width: 30px;
-  transform-style: flat;
+  
   cursor: pointer;
 }
 .scroll-up {
@@ -201,3 +201,10 @@ li {
 .hide {
   display: none;
 }
+@media (max-width: 600px) {
+  .delete-list{
+    display: none;
+  }
+  
+}
+
