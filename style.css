@@ -1,0 +1,203 @@
+body {
+  height: 1o0vh;
+  width: 100%;
+  margin: 0;
+}
+h3 {
+  text-align: center;
+  color: aliceblue;
+  font-family: monospace;
+  font-size: x-large;
+}
+h1 {
+  text-align: center;
+  color: aliceblue;
+  font-family: monospace;
+  font-weight: 200;
+  font-size: medium;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+
+  background: linear-gradient(
+    to right,
+    #ffd452,
+    #544a7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 7px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-button {
+  background-color: cadetblue;
+  color: aliceblue;
+  padding-right: 20px;
+  padding: 7px;
+  margin: 3px;
+  border: 5px;
+  box-shadow: cadetblue;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid cadetblue;
+}
+.list-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.list-content {
+  padding-top: 10px;
+  margin: 0;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.form-controler {
+  background: transparent;
+
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+
+  width: 450px;
+  border-radius: 10px;
+  z-index: 3;
+
+  margin: 0 auto;
+}
+
+.form {
+  text-align: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+#task {
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  border-radius: 20px;
+  padding: 5px;
+  border: 1px solid white;
+  outline: none !important;
+  box-shadow: none !important;
+}
+ul .list {
+  padding: 25px;
+  list-style-type: none;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+}
+
+li {
+  width: 320px;
+  color: white;
+  list-style-type: none;
+  z-index: 3;
+  padding: 2px;
+  margin: 0 auto;
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+}
+#deleteButton {
+  color: brown;
+  justify-content: space-between;
+  box-shadow: rgb(238, 223, 203);
+  width: 40px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid brown;
+  font-weight: 600;
+  font-style: bold;
+  align-items: flex-end;
+}
+#deleteButton:hover {
+  background-color: brown;
+  color: azure;
+}
+#updateButton {
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color: transparent;
+  color: rgb(220, 229, 230);
+  padding: 5px;
+  width: 70px;
+  border: 1px solid cadetblue;
+  padding-right: 7px;
+  padding-left: 7px;
+  border-radius: 10px;
+  margin: 5px;
+  margin-left: 45px;
+}
+
+#updateButton:hover {
+  background-color: cadetblue;
+  color: white;
+}
+.delete-list {
+  border-radius: 40px;
+  background-color: transparent;
+  color: #544a7d;
+  padding: 5px;
+  font-weight: 350;
+  font-size: x-large;
+  width: 20px;
+  border: 1px solid transparent;
+  align-items: flex-end;
+
+  position: absolute;
+  left: 65%;
+  bottom: 57%;
+  margin-top: 95%;
+}
+.delete-list:hover {
+  width: 30px;
+  transform-style: flat;
+  cursor: pointer;
+}
+.scroll-up {
+  background-color: cadetblue;
+  border-radius: 18px;
+  border: transparent;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  opacity: 1;
+  padding: 10px;
+  right: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: fixed;
+  left: 85%;
+  bottom: 5%;
+  margin-top: 95%;
+  z-index: 1000;
+  width: 100px;
+}
+
+.scroll-up:hover {
+  background-color: cadetblue;
+  color: black;
+  cursor: pointer;
+}
+/* drag and drop css*/
+
+.drag-over {
+  border: dashed 3px red;
+}
+.hide {
+  display: none;
+}
