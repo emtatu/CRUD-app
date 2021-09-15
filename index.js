@@ -44,7 +44,12 @@ function remove(event) {
 function deleteList(event) {
     var list = document.getElementById('list');
 
-    list.removeChild();
+    // for (let i = 0; i < list.childNodes.length; i++) {
+    //     list.removeChild(list.childNodes[i]);
+    // }   
+    list.innerHTML = ""
+
+
 }
 
 

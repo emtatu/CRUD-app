@@ -1,7 +1,12 @@
 body {
-  height: 1o0vh;
+  height: 100vh;
   width: 100%;
   margin: 0;
+  background: linear-gradient(
+    to right,
+    #ffd452,
+    #544a7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 h3 {
   text-align: center;
@@ -13,18 +18,14 @@ h1 {
   text-align: center;
   color: aliceblue;
   font-family: monospace;
-  font-weight: 200;
+
   font-size: medium;
 }
 .container {
   height: 100vh;
   width: 100%;
+  padding-top: 30px;
 
-  background: linear-gradient(
-    to right,
-    #ffd452,
-    #544a7d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-top: 7px;
   flex-direction: column;
   justify-content: space-between;
@@ -47,6 +48,7 @@ h1 {
   background-color: transparent;
   color: white;
   border: 1px solid cadetblue;
+  cursor: pointer;
 }
 .list-wrapper {
   height: 100%;
@@ -122,6 +124,7 @@ li {
 #deleteButton:hover {
   background-color: brown;
   color: azure;
+  cursor: pointer;
 }
 #updateButton {
   align-items: flex-end;
@@ -141,26 +144,27 @@ li {
 #updateButton:hover {
   background-color: cadetblue;
   color: white;
+  cursor: pointer;
 }
 .delete-list {
   border-radius: 40px;
   background-color: transparent;
-  color: #544a7d;
+  color: red;
   padding: 5px;
-  font-weight: 350;
-  font-size: x-large;
-  width: 20px;
+  font-weight: 150;
+  font-size: medium;
+  width: 30px;
   border: 1px solid transparent;
   align-items: flex-end;
 
   position: absolute;
-  left: 62%;
-  bottom: 71%;
+  left: 57%;
+  bottom: 81%;
   margin-top: 95%;
 }
 .delete-list:hover {
   width: 30px;
-  
+
   cursor: pointer;
 }
 .scroll-up {
@@ -193,6 +197,19 @@ li {
   color: black;
   cursor: pointer;
 }
+
+footer {
+  text-align: center;
+  color: aliceblue;
+  font-family: monospace;
+  font-size: medium;
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: medium;
+}
 /* drag and drop css*/
 
 .drag-over {
@@ -202,9 +219,7 @@ li {
   display: none;
 }
 @media (max-width: 600px) {
-  .delete-list{
+  .delete-list {
     display: none;
   }
-  
 }
-
