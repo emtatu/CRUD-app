@@ -10,7 +10,9 @@ var liToUpdate = null;
 function submitTask() {
 
     var input = document.getElementById("task").value;
-
+    if (input == '') {
+        return
+    }
     if (liToUpdate === null) {
         document.getElementById("list").innerHTML += ('<li class="item " id="item" draggable="true">' + input + '<button id="updateButton" onclick="update(event)">update</button> <button id="deleteButton" onclick="remove(event)">x</button>' + '</li>');
 

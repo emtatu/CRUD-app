@@ -20,7 +20,7 @@ h1 {
 }
 .container {
   background-image: url(/img/giphy.gif);
-
+  overflow: scroll;
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center top;
